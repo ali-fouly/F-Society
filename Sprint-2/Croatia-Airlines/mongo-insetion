@@ -1,0 +1,5 @@
+	db.flights.insert({ "flight_number": "1", "origin": "giza", "destination": "berlin"})
+	db.flights.insert({ "flight_number": "2", "origin": "cairo", "destination": "london"})
+db.flights.insert({ "flight_number": "3", "origin": "london", "destination": "cairo"})
+db.flights.insert({ "flight_number": "4", "origin": "tokyo", "destination": "berlin"})
+db.flights.insert({ "flight_number": "5", "origin": "berlin", "destination": "giza"})

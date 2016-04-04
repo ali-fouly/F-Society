@@ -1,0 +1,102 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+	background-color: #fff;    
+	background: url('../img/background-1.jpg') no-repeat center center fixed;
+
+    background-size: cover;
+}
+.container{
+	margin: 0px 20px 0px 20px;																																																																																																																																																																															
+}
+.title-div{
+	text-align: center;
+	margin: 50px 0px 100px 0px;
+}
+.title-div img{
+	height: 100px;
+}
+.airline-title{
+	text-transform: uppercase;
+	color: #E61938;
+}
+.airline-slogan{
+	color: #006AB1;
+	font-weight: bold;
+
+}
+.sub-page{
+	margin: 50px 0px 50px 0px;
+	font-weight: bold;
+	color: #E61938;
+
+}
+.sub-page-title{
+	margin: 0 auto;
+
+}
+.form-container{
+	margin-top: 30px;
+}
+.sub-page label{
+	position: relative;
+	margin-left: 20px;
+	margin-right: 10px;
+	color: #006AB1;
+}
+.search-btn{
+	margin-left: 600px
+}
+.book-btn{
+	margin-left: 800px
+}
+.footer-wrapper{
+	width: 100%;
+	background-color: #eee;
+	font-family: Arial;
+	position: relative;
+	margin-top: 50px;
+	bottom: 0px;
+	height: 110px;
+}
+.footer-wrapper p{
+	margin-left: 20px;
+}
+.social-media{
+	position: relative;
+	top: 20px;
+	margin-left: 20px;
+	font-family: serif;
+	text-transform: uppercase;
+}
+.social-media img{
+	width: 30px;
+	position: relative;
+	top: -2px;
+}
+.social-media .insta-img{
+	position: relative;
+	top: -2px;
+}
+.copyright{
+	font-weight: bold;
+	font-size: 13px;
+	position: relative;
+	bottom: 20px;
+	color:#888;
+}
+.development-p{
+	font-weight: bold;
+	font-size: 13px;
+	float:right;
+	position: relative;
+	bottom:	30px;
+	margin-right: 20px;
+	color:#888;
+}
+.development-p label{
+	color: #00f;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html ng-app = "airlineApp">
+	<head>
+					<title>Croatia Airlines</title>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+			<!-- Optional theme -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+			<link rel="stylesheet" href="styles/normalize.css">
+    	<link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="title-div">
+				<h1 class="airline-title"> <img src="img/logo-2.png"><br>Croatia Ailrlines</h1>
+				<p class="airline-slogan">We will get you wherever you want</p>
+			</div>
+			<form class="main-form">
+				<div class="sub-page">
+					Search Flights
+					<div class="form-container">
+						<form class="search-form">
+							<label>From: </label>
+								<select>
+									<option></option>
+									<option>Berlin</option>
+									<option>Cairo</option>
+									<option>Giza</option>
+									<option>London</option>
+									<option>Tokyo</option>
+								</select>
+							<label>To: </label>
+								<select>
+									<option></option>
+									<option>Berlin</option>
+									<option>Cairo</option>
+									<option>Giza</option>
+									<option>London</option>
+									<option>Tokyo</option>
+								</select>
+							<br><br>
+							<label>Class: </label>
+								<select>
+									<option>Economy</option>
+									<option>business</option>
+									<option>first</option>
+								</select>
+							<label>Date: </label>
+								<input type="datelocal-time"></input>
+								<br><br>
+								<input type="submit" class="search-btn" value="search flights"></input>
+						</form>	
+					</div>
+					<div ng-controller="FlightsController" ng-show="">
+
+					<!-- flights available -->
+
+						<h1>There are {{flights.length}} Flights</h1>
+						<ul>
+							<li ng-repeat="flight in flights">
+								{{flight.flight_number}}
+							</li>
+						</ul>
+						<form ng-submit="createFlight()">
+							<input type="text" placeholder="flight number" ng-model="flightNumber"></input>
+							<button type="submit">Add</button>
+						</form>
+					</div>
+				</div>
+				<div class="sub-page">
+					User Information
+					<div class="form-container">
+						<label>Name: </label>
+							<input type="text" placeholder="first name"></input> <input type="text" placeholder="last name"></input>
+						<label>Email: </label>
+							<input type="text" placeholder="example@domain.com"></input>
+						<br><br>
+						<label>Country: </label>
+							<input type="text"></input>
+						<label>Address: </label>
+							<input type="text"></input>
+						<br><br>
+						<label>Phone number: </label>
+							<input type="text"></input>
+					</div>
+				</div>
+				<div class="sub-page">
+					Payment
+					<div class="form-container">
+						<label>Credit Card number: </label>
+						<input type="text"></input>
+						<br><br>
+						<input type="submit" class="book-btn" value="Book now"></input>
+				</div>
+			</form>
+			</div>
+		</div>
+		<div class="footer-wrapper">
+			<p class="social-media"> follow us <img src="img/fb.png"> <img class="insta-img" src="img/instagram.png"></p>
+			<br><br>
+			<p class="copyright">Copyright &copy F-Society Designs 2016, All Rights Reserved.</p>
+			<p class="development-p">Developed by: <label>F-Society</label></p>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+
+		<script type="text/javascript" src="/js/app.js"></script>
+		<script type="text/javascript" src="/js/controllers/FlightsController.js"></script>
+	</body>
+</html>
